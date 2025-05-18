@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Onboarding Form</title>
+	<style>
+		form {
+			display: block;
+			margin-top: 0em;
+			font-family: 'Courier New', Courier, monospace;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="mailto:james@dwellersprinting.com;tyler@dwellersprinting.com" method="POST" enctype="text/plain">
+		<h1>Onboarding Form</h1>
+		<fieldset>
+			<legend>Customer Type:</legend>
+			<div>
+				<input type="radio" id="b2b" name="contact" value="b2b" checked />
+				<label for="b2b">B2B aka Business to Business</label>
+				<br>
+				<input type="radio" id="b2c" name="contact" value="b2c" />
+				<label for="b2c">B2C aka Business to Customer (Person)</label>
+
+			</div>
+
+		</fieldset><br><br>
+
+		<label for="first-name">First Name:</label>
+		<input type="text" id="first-name" name="first-name" placeholder="Firsty" required><br><br>
+
+		<label for="last-name">Last Name:</label>
+		<input type="text" id="last-name" name="last-name" placeholder="Lasty" required><br><br>
+
+		<label for="email">Email Address:</label>
+		<input type="email" id="email" name="email" placeholder="hello@example.com" required><br><br>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" placeholder="732-867-5309" required><br><br>
+
+		<!-- <label for="position">Position:</label> -->
+		<input type="text" id="position" name="position"><br><br>
+
+		<button type="submit">Submit</button>
+	</form>
+</body>
+
+</html>
